@@ -17,4 +17,5 @@ module "pet-module" {
   
 output "test_output" {
   value = random_password.password2.result
+  sensitive = true
 }
