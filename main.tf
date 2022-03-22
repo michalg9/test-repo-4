@@ -19,3 +19,7 @@ output "test_output" {
   value = random_password.password2.result
   sensitive = true
 }
+
+output "my_pet_id" {
+  value = pet-module.id
+}
