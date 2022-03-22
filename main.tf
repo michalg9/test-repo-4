@@ -20,6 +20,10 @@ output "test_output" {
   sensitive = true
 }
 
-output "my_pet_id" {
-  value = pet-module.id
+resource "random_uuid" "test" {
 }
+  
+output "generated_uuid" {
+  value = random_uuid.test.result
+}
+
